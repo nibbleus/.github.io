@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soar.le | Leicester's AI Dining Concierge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 400: '#34d399', 500: '#10b981', 600: '#059669' },
+                        slate: { 800: '#1e293b', 900: '#0f172a', 950: '#020617' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter text-white">soar<span class="text-emerald-500">.le</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+            <a href="#features" class="hover:text-emerald-400 transition">Features</a>
+            <a href="#partners" class="hover:text-emerald-400 transition">For Restaurants</a>
+        </div>
+        <a href="#waitlist" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 rounded-full text-sm font-medium transition shadow-lg shadow-emerald-500/20">Join Beta</a>
+    </nav>
+
+    <header class="container mx-auto px-6 py-20 text-center md:py-32 flex flex-col items-center">
+        <div class="inline-block px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold tracking-wide uppercase mb-6">
+            Launching in Leicester • Jan 2026
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-tight max-w-4xl">
+            Stop searching. <br> Start <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">dining.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl">
+            Meet your hyper-local AI dining concierge. Tell Soar what you're craving, what your vibe is, and let our engine match you with Leicester's best tables in seconds.
+        </p>
+        
+        <div class="w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl overflow-hidden text-left mb-12">
+            <div class="bg-slate-800/50 px-4 py-3 border-b border-slate-700 flex items-center gap-3">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                <span class="text-xs text-slate-400 font-mono ml-2">soar_ai_engine</span>
+            </div>
+            <div class="p-6 space-y-4">
+                <div class="flex justify-end">
+                    <div class="bg-emerald-600 text-white px-4 py-2 rounded-2xl rounded-tr-sm text-sm inline-block shadow-md">
+                        I need a romantic, dimly-lit spot for an anniversary tonight. Gluten-free options are a must.
+                    </div>
+                </div>
+                <div class="flex justify-start">
+                    <div class="bg-slate-800 border border-slate-700 text-slate-200 px-4 py-3 rounded-2xl rounded-tl-sm text-sm inline-block shadow-md max-w-[85%]">
+                        I've found 3 premium venues within a 10-minute walk matching that exact vibe. I've highlighted the most romantic window booths on the floor plan for you. Would you like me to secure a table? ✨
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="partners" class="border-t border-slate-800 bg-slate-900/50">
+        <div class="container mx-auto px-6 py-24 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Driving Incremental Covers in Leicester</h2>
+            <p class="text-slate-400 max-w-3xl mx-auto mb-12">
+                soar.le is an AI-driven discovery engine. We capture high-intent diners at the top of the funnel using multimodal search, and seamlessly route them to our official reservation partners.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-slate-800/30 p-8 rounded-2xl border border-slate-800">
+                    <div class="text-emerald-400 text-3xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold text-white mb-2">High-Intent Leads</h3>
+                    <p class="text-sm text-slate-400">Our users aren't browsing; they are asking an AI to book them a table right now based on hyper-specific criteria.</p>
+                </div>
+                <div class="bg-slate-800/30 p-8 rounded-2xl border border-slate-800">
+                    <div class="text-emerald-400 text-3xl mb-4">🔄</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Seamless Handoff</h3>
+                    <p class="text-sm text-slate-400">We don't manage the inventory. We act as an affiliate aggregator, pushing ready-to-book users directly into partner APIs.</p>
+                </div>
+                <div class="bg-slate-800/30 p-8 rounded-2xl border border-slate-800">
+                    <div class="text-emerald-400 text-3xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold text-white mb-2">KNN Analytics</h3>
+                    <p class="text-sm text-slate-400">Our machine learning models understand diner behavior, allowing us to fill empty tables during off-peak hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800 bg-slate-950 py-12 text-center">
+        <div class="text-2xl font-bold tracking-tighter text-white mb-4">soar<span class="text-emerald-500">.le</span></div>
+        <p class="text-sm text-slate-500 mb-6">Leicester's Premier Dining Aggregator. © 2026 soar.le</p>
+        <div class="space-x-4 text-sm text-slate-400">
+            <a href="mailto:partners@soar-le.com" class="hover:text-emerald-400">Partner with us</a> • 
+            <a href="#" class="hover:text-emerald-400">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
